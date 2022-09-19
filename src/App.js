@@ -61,15 +61,27 @@ function App() {
         <p>Score: {100 - output.modified_percent}</p>
         <p>
         Errors1:
-        <pre>{output.errors.file1}
+        <pre>{output.errors.file1.output}
+
         </pre>
+        <p style={{color:'red'}}>
+
+        Warning Count: {output.errors.file1.warning_count}
+        </p>
         
         </p>
         <p>
         Errors2:
         <pre>
-        {output.errors.file2}
+        {output.errors.file2.output}
+        
         </pre>
+
+        <p style={{color:'red'}}>
+        Warning Count: {output.errors.file2.warning_count}
+        </p>
+
+      
         
         </p>
 
